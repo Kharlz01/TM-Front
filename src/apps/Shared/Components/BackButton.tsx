@@ -27,7 +27,7 @@ const BackButton: FC<ButtonProps> = ({ onClick }) => {
           d="M11 6L5 12M5 12L11 18M5 12H19"
         ></path>
       </svg>
-      <p>Volver</p>
+      <p className="text-sm md:text-base">Volver</p>
     </button>
   );
 };

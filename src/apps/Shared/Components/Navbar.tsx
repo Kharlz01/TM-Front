@@ -1,6 +1,6 @@
 import { forwardRef, ComponentPropsWithRef } from 'react';
 import { useNavigate } from 'react-router-dom';
-import Button2 from './Button';
+import Button from './Button';
 import Menu from './Menu';
 import { useAuth } from '../../Auth/mode/AuthUser';
 
@@ -23,12 +23,12 @@ const Navbar = forwardRef<HTMLElement, NavbarProps>((props, ref) => {
         </a>
         <div className='flex items-center gap-x-2'>
           {!token ? (
-            <Button2 onClick={() => navigate('/login')}>Ingreso</Button2>
+            <Button onClick={() => navigate('/login')}>Ingreso</Button>
           ) : (
             <Menu />
           )}
           {!token && (
-            <Button2 onClick={() => navigate('/signup')}>Registrate</Button2>
+            <Button onClick={() => navigate('/signup')}>Registrate</Button>
           )}
         </div>
       </div>

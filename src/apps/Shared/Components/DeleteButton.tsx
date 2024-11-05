@@ -15,8 +15,7 @@ import {
     return (
         <button
         onClick={onClick}
-        className="group relative flex h-14 w-14 flex-col items-center justify-center overflow-hidden rounded-xl border-2 border-red-900 bg-red-500 hover:bg-red-700"
-        
+        className="group relative flex h-11 md:h-14 w-11 md:w-14 flex-col items-center justify-center overflow-hidden rounded-xl border-2 border-red-900 bg-red-500 hover:bg-red-700"
       >
         <svg
           viewBox="0 0 1.625 1.625"

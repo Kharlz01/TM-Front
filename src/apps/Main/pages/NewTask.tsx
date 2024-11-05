@@ -157,7 +157,7 @@ const Signup: FC<NewTaskProps> = () => {
             </div>
             <div className="grid grid-cols-2 gap-4">
               <div>
-                <label className="block text-sm text-gray-600">
+                <label className="block text-xs md:text-sm text-gray-600">
                   Fecha de vencimiento:
                 </label>
                 <input
@@ -168,34 +168,7 @@ const Signup: FC<NewTaskProps> = () => {
                 />
               </div>
               <div>
-                <label className="block text-sm text-gray-600">
-                  Prioridad:
-                </label>
-                <select 
-                className="w-full px-4 py-2 mt-1 border rounded-lg focus:outline-none focus:border-purple-500 bg-gray-100"
-                value={data?.priority}
-                onChange={handlePriority}
-                >
-                  <option value={"low"}>Baja</option>
-                  <option value={"medium"}>Media</option>
-                  <option value={"high"}>Alta</option>
-                </select>
-              </div>
-            </div>
-            <div className="grid grid-cols-2 gap-4">
-              <div>
-                <label className="block text-sm text-gray-600">Estado:</label>
-                <select 
-                className="w-full px-4 py-2 mt-1 border rounded-lg focus:outline-none focus:border-purple-500 bg-gray-100"
-                value={data?.status}
-                onChange={handleStatus}>
-                  <option value={"pending"}>Pendiente</option>
-                  <option value={"ongoing"}>En curso</option>
-                  <option value={"completed"}>Completado</option>
-                </select>
-              </div>
-              <div>
-                <label className="block text-sm text-gray-600">Etiqueta:</label>
+                <label className="block text-xs md:text-sm text-gray-600">Etiqueta:</label>
                 <select 
                 className="w-full px-4 py-2 mt-1 border rounded-lg focus:outline-none focus:border-purple-500 bg-gray-100"
                 value={data?.tag}
@@ -211,6 +184,33 @@ const Signup: FC<NewTaskProps> = () => {
                   <option value={"health"}>Salud</option>
                   <option value={"money"}>Finanzas</option>
                   <option value={"creative"}>Creativas</option>
+                </select>
+              </div>
+            </div>
+            <div className="grid grid-cols-2 gap-4">
+              <div>
+                <label className="block text-xs md:text-sm text-gray-600">Estado:</label>
+                <select 
+                className="w-full px-4 py-2 mt-1 border rounded-lg focus:outline-none focus:border-purple-500 bg-gray-100"
+                value={data?.status}
+                onChange={handleStatus}>
+                  <option value={"pending"}>Pendiente</option>
+                  <option value={"ongoing"}>En curso</option>
+                  <option value={"completed"}>Completado</option>
+                </select>
+              </div>
+              <div>
+                <label className="block text-xs md:text-sm text-gray-600">
+                  Prioridad:
+                </label>
+                <select 
+                className="w-full px-4 py-2 mt-1 border rounded-lg focus:outline-none focus:border-purple-500 bg-gray-100"
+                value={data?.priority}
+                onChange={handlePriority}
+                >
+                  <option value={"low"}>Baja</option>
+                  <option value={"medium"}>Media</option>
+                  <option value={"high"}>Alta</option>
                 </select>
               </div>
             </div>

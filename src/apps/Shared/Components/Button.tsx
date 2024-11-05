@@ -25,14 +25,14 @@ import {
         onClick={onClick}
         onMouseEnter={() => setHover(true)}
         onMouseLeave={() => setHover(false)}
-        className={`px-4 py-2  text-white rounded-lg 
+        className={`px-2 py-1 md:px-4 md:py-2 text-white rounded-lg text-center
                      ${hover ? 'bg-purple-700' : 'bg-purple-500'}`}
         style={{
           ...(disabled && {
             backgroundColor: 'gray',
           }),
         }}>
-          <span className='text-lg leading-4'>
+          <span className='text-sm md:text-lg md:leading-4'>
             {loading && (
               'Cargando...'
             )}

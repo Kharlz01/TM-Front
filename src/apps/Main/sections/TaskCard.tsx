@@ -101,11 +101,11 @@ const TaskCard: FC<TaskCardProps> = ({ task }) => {
         <div className="flex items-center justify-between">
           <button
             className={`${statusBg[taskStatus]} 
-      text-white font-bold py-2 px-4 rounded m-2 cursor-default`}
+      text-white font-bold text-xs md:text-base py-2 px-4 rounded m-2 cursor-default`}
           >
             {statusTexts[taskStatus]}
           </button>
-          <button className="bg-gray-400 text-white font-bold py-2 px-4 rounded m-2 cursor-default">
+          <button className="bg-gray-400 text-white text-xs md:text-base font-bold py-2 px-4 rounded m-2 cursor-default">
             {tagText[taskTag]}
           </button>
         </div>
@@ -135,7 +135,7 @@ const TaskCard: FC<TaskCardProps> = ({ task }) => {
       <div className="flex items-center justify-between p-4">
         <button
           className={`${priorityBg[taskPriority]} 
-      text-white font-bold py-2 px-4 rounded m-2 cursor-default`}
+      text-white font-bold text-xs md:text-base py-2 px-4 rounded m-2 cursor-default`}
         >
           {priorityTexts[taskPriority]}
         </button>

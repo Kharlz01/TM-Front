@@ -251,7 +251,7 @@ const EditTask: FC<EditTaskProps> = () => {
             </div>
             <div className="grid grid-cols-2 gap-4">
               <div>
-                <label className="block text-sm text-gray-600">
+                <label className="block text-xs md:text-sm text-gray-600">
                   Fecha de vencimiento:
                 </label>
                 <input
@@ -262,7 +262,7 @@ const EditTask: FC<EditTaskProps> = () => {
                 />
               </div>
               <div>
-                <label className="block text-sm text-gray-600">
+                <label className="block text-xs md:text-sm text-gray-600">
                   Prioridad:
                 </label>
                 <select
@@ -278,7 +278,7 @@ const EditTask: FC<EditTaskProps> = () => {
             </div>
             <div className="grid grid-cols-2 gap-4">
               <div>
-                <label className="block text-sm text-gray-600">Estado:</label>
+                <label className="block text-xs md:text-sm text-gray-600">Estado:</label>
                 <select
                   className="w-full px-4 py-2 mt-1 border rounded-lg focus:outline-none focus:border-purple-500 bg-gray-100"
                   value={data?.status}
@@ -290,7 +290,7 @@ const EditTask: FC<EditTaskProps> = () => {
                 </select>
               </div>
               <div>
-                <label className="block text-sm text-gray-600">Etiqueta:</label>
+                <label className="block text-xs md:text-sm text-gray-600">Etiqueta:</label>
                 <select
                   className="w-full px-4 py-2 mt-1 border rounded-lg focus:outline-none focus:border-purple-500 bg-gray-100"
                   value={data?.tag}

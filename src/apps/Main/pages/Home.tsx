@@ -65,7 +65,8 @@ const Home: FC<HomeProps> = () => {
         <div className="flex space-x-4">
           <div>
             <select
-              className="bg-white text-black border border-black font-bold py-2 px-4 rounded"
+              className="bg-white text-black border w-28 md:w-auto
+              border-black font-bold py-2 px-4 rounded text-xs md:text-base"
               value={Sort}
               onChange={handleSort}
             >
@@ -82,7 +83,8 @@ const Home: FC<HomeProps> = () => {
           </div>
           <div>
             <select
-              className="bg-white text-black border border-black font-bold py-2 px-4 rounded"
+              className="bg-white text-black border w-24 md:w-auto
+              border-black font-bold py-2 px-4 rounded text-xs md:text-base"
               value={Tags}
               onChange={handleTags}
             >
@@ -103,7 +105,6 @@ const Home: FC<HomeProps> = () => {
       </nav>
       <div className="size-full max-w-screen-2xl mx-auto px-6 py-6">
       <div className="size-full flex flex-wrap gap-4">
-        {/* <div className="size-full flex flex-wrap gap-4"> */}
           {Tasks && Tasks.length > 0 ? (
             Tasks.map((Task) => <TaskCard key={Task.id} task={Task} />)
           ) : (
@@ -133,11 +134,11 @@ const Home: FC<HomeProps> = () => {
       <h1 className='text-2xl md:text-8xl font-["galada"]'>
         Bienvenido a Task<span className="text-purple-400">Master</span>
       </h1>
-      <h2 className="text-xl md:text-4xl my-3">
+      <h2 className="text-xl md:text-4xl my-3 text-center">
         Tu aplicativo de gestion de tareas personales.
       </h2>
       <h3 className="text-xl md:text-3xl my-2">Aqui comienza tu aventura</h3>
-      <p className="text-lg">
+      <p className="text-lg text-center">
         {" "}
         <a className="text-violet-200" href="./signup">
           Crea una cuenta

@@ -14,12 +14,14 @@ import {
   
     return (
         <button 
-        className="rounded-lg relative w-36 h-10 cursor-pointer flex items-center border border-green-500 bg-green-500 group hover:bg-green-500 active:bg-green-500 active:border-green-500"
+        className="rounded-lg relative w-10 md:w-36 h-10 cursor-pointer flex items-center border border-green-500 bg-green-500 group hover:bg-green-500 active:bg-green-500 active:border-green-500"
         onClick={onClick}>
-          <span className="text-white font-semibold ml-3 group-hover:text-green-500 transition-all duration-300">
+          <span className="text-white font-semibold ml-3 group-hover:text-green-500 transition-all duration-300 hidden md:block">
             Nueva Tarea
           </span>
-          <span className="absolute right-0 h-full w-10 rounded-lg bg-green-500 flex items-center justify-center transform group-hover:translate-x-0 group-hover:w-full transition-all duration-300">
+          <span className="absolute md:right-0 h-full w-10 rounded-lg bg-green-500 
+          flex items-center justify-center transform group-hover:translate-x-0 
+          group-hover:w-full transition-all duration-300">
             <svg
               className="svg w-8 text-white"
               fill="none"
