@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.galada {
+    font-family: "Galada", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
